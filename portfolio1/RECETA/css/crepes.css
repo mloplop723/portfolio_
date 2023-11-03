@@ -1,0 +1,114 @@
+/********************************************************************/
+/*           Hoja de estilo de pastacontomate.html                 */
+/*           Autora: María Lucía López López                      */
+/*           Versión: 1.0                                        */
+/*           Fecha: octubre 2023                                */
+/*           comentario: ejercicio para portfolio              */
+/**************************************************************/
+/* Organización de la hoja de estilo */
+/* 1- enlace con archivos externos */
+@font-face {
+        font-family: textonormal ;
+        src: url(../fonts/SFCartoonistHand.ttf);
+    }
+    @font-face {
+        font-family: titulo ;
+        src: url(../fonts/BlubyKids-Regular.otf);
+    }
+/* 2- selector wildcard (si lo hay) */
+
+*{box-sizing: border-box;} /* Indica que el width de cada box será contando el borde hacia adentro */
+
+/* 3- estructura del layout general */
+body {background-color: rgba(170, 49, 0, 0.692);
+        background-image: url(../img/crepes.jpg);
+        background-size:20%;}
+#wrapper{background-color: rgb(236, 170, 112);
+        width: 80%;
+        margin: auto;
+        padding:3%;}
+h1, h2 {font-family:titulo;
+        text-align: center;
+        border-bottom:2px solid rgb(165, 87, 42, 0.774);
+        width:80%;
+        margin: auto;
+        padding:5px;
+        border-radius: 20px; /*borde redondeado*/
+        text-align: center;/*centrado el texto dentro del bloque */
+        box-shadow: 5px 5px 5px rgb(165, 95, 42), /*sombreado efecto halo */
+                    -5px 5px 5px rgb(165, 95, 42),
+                    5px -5px 5px rgb(165, 95, 42),
+                    -5px -5px 5px rgba(165, 95, 42);
+        background-color: rgb(165,87,42,0.774);}
+h1{font-size:3.5em;
+    color:rgba(203,130,46,0.995);}
+h2{font-size: 2em;
+    color:rgb(120, 52, 10);}
+h3 {font-family: textonormal;
+    color:rgb(140, 64, 30);
+    text-align: left;
+    margin:1em;
+    padding:4px;
+    
+    }
+ul, ol, dl{margin:5px 10%;
+        padding: 30px;
+        padding-left: 3px;
+
+        }
+ul{text-align: left;
+}
+blockquote{
+    border-left: 8px solid rgb(90, 56, 0);
+    background-color: rgba(186, 105, 33, 0.69);
+    margin: 3.5% 18%;
+    padding: 2%;
+    font-style:italic;
+}
+#crepes{width:50%;
+        display:block;
+        margin: 15vh auto;}
+#crepes2{width: 45%;
+        float: right;
+        padding:4%;
+        }
+#masa{width: 45%;
+    float: right;
+    padding:2%;}
+#cocinamos{width:40%;
+            float:right;
+            padding:2%;}
+#conservar{width:40%;
+            float: right;
+            padding:1.5%;}
+#salados {width:40%;
+        float:right;
+        padding:4%;}
+#dulces{width:40%;
+        float:right;
+        padding:1.15%;}
+#nutricional{width:45%;
+            float:right;
+            padding:2%;}
+@media only screen and (width<= 1250px){
+        #crepes .contenedor-img {
+                display: none;
+        }
+        #crepes {
+                justify-content: left;
+                margin-left: 4%;
+        }
+}
+@media only screen and (width<=1675px) {
+        #crepes .contenedor-img {
+                margin-top: 50%;
+                height: 275px;
+                width: 275px;
+                margin: auto;
+        }
+        #crepes .texto {
+                margin:auto;
+        }
+}
+
+/* 4- section a section (si las hubiera) en detalle */
